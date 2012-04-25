@@ -2,8 +2,6 @@
 //  DurdenAppDelegate.h
 //  Durden
 //
-//  Created by Arnaud Fontaine and Damien Riquet on 17/04/12.
-//
 
 
 #import <Cocoa/Cocoa.h>
