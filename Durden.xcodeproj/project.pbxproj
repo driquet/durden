@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51411CC5153D7004000F03C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51411CC4153D7004000F03C6 /* Cocoa.framework */; };
+		51411CCF153D7004000F03C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51411CCD153D7004000F03C6 /* InfoPlist.strings */; };
+		51411CD1153D7004000F03C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51411CD0153D7004000F03C6 /* main.m */; };
+		51411CD5153D7004000F03C6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 51411CD3153D7004000F03C6 /* Credits.rtf */; };
+		51411CD8153D7004000F03C6 /* DurdenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51411CD7153D7004000F03C6 /* DurdenAppDelegate.m */; };
+		5168E180153D86EE00201003 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5168E17F153D86EE00201003 /* 0.png */; };
+		5180E47615474EE700883917 /* left.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47315474EE700883917 /* left.applescript */; };
+		5180E47715474EE700883917 /* right.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47415474EE700883917 /* right.applescript */; };
+		5180E47815474EE700883917 /* top.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47515474EE700883917 /* top.applescript */; };
+		5180E47D1547510B00883917 /* bottomleft.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E4791547510A00883917 /* bottomleft.applescript */; };
+		5180E47E1547510B00883917 /* bottomright.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47A1547510A00883917 /* bottomright.applescript */; };
+		5180E47F1547510B00883917 /* topleft.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47B1547510A00883917 /* topleft.applescript */; };
+		5180E4801547510B00883917 /* topright.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E47C1547510B00883917 /* topright.applescript */; };
+		5180E4831547588200883917 /* center.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E4811547588200883917 /* center.applescript */; };
+		5180E4841547588200883917 /* fullscreen.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E4821547588200883917 /* fullscreen.applescript */; };
+		51915D2F153EB80F00A0FB5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51915D2E153EB80F00A0FB5F /* MainMenu.xib */; };
+		51CBAB5B1546C42700A41B38 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CBAB571546C3EA00A41B38 /* ShortcutRecorder.framework */; };
+		51CBAB791546CC3100A41B38 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB721546CC3100A41B38 /* PTHotKey.m */; };
+		51CBAB7A1546CC3100A41B38 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB741546CC3100A41B38 /* PTHotKeyCenter.m */; };
+		51CBAB7B1546CC3100A41B38 /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB761546CC3100A41B38 /* PTKeyCodeTranslator.m */; };
+		51CBAB7C1546CC3100A41B38 /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB781546CC3100A41B38 /* PTKeyCombo.m */; };
+		51CBAB7E1546CED400A41B38 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CBAB7D1546CED400A41B38 /* Carbon.framework */; };
+		51FAAF2B1546F7510063F42A /* bottom.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 51FAAF2A1546F7510063F42A /* bottom.applescript */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51CBAB561546C3EA00A41B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51CBAB4D1546C3EA00A41B38 /* ShortcutRecorder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 939837800DA42965007F53F3;
+			remoteInfo = ShortcutRecorder.framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51411CC0153D7004000F03C6 /* Durden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Durden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51411CC4153D7004000F03C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		51411CC7153D7004000F03C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		51411CC8153D7004000F03C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		51411CC9153D7004000F03C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		51411CCC153D7004000F03C6 /* Durden-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Durden-Info.plist"; sourceTree = "<group>"; };
+		51411CCE153D7004000F03C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51411CD0153D7004000F03C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51411CD2153D7004000F03C6 /* Durden-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Durden-Prefix.pch"; sourceTree = "<group>"; };
+		51411CD4153D7004000F03C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		51411CD6153D7004000F03C6 /* DurdenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DurdenAppDelegate.h; sourceTree = "<group>"; };
+		51411CD7153D7004000F03C6 /* DurdenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DurdenAppDelegate.m; sourceTree = "<group>"; };
+		5168E17F153D86EE00201003 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = SOURCE_ROOT; };
+		5180E47315474EE700883917 /* left.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = left.applescript; sourceTree = "<group>"; };
+		5180E47415474EE700883917 /* right.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = right.applescript; sourceTree = "<group>"; };
+		5180E47515474EE700883917 /* top.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = top.applescript; sourceTree = "<group>"; };
+		5180E4791547510A00883917 /* bottomleft.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = bottomleft.applescript; sourceTree = "<group>"; };
+		5180E47A1547510A00883917 /* bottomright.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = bottomright.applescript; sourceTree = "<group>"; };
+		5180E47B1547510A00883917 /* topleft.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = topleft.applescript; sourceTree = "<group>"; };
+		5180E47C1547510B00883917 /* topright.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = topright.applescript; sourceTree = "<group>"; };
+		5180E4811547588200883917 /* center.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = center.applescript; sourceTree = "<group>"; };
+		5180E4821547588200883917 /* fullscreen.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = fullscreen.applescript; sourceTree = "<group>"; };
+		51915D2E153EB80F00A0FB5F /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		51CBAB4D1546C3EA00A41B38 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ShortcutRecorder/ShortcutRecorder.xcodeproj; sourceTree = "<group>"; };
+		51CBAB711546CC3100A41B38 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		51CBAB721546CC3100A41B38 /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		51CBAB731546CC3100A41B38 /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		51CBAB741546CC3100A41B38 /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		51CBAB751546CC3100A41B38 /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		51CBAB761546CC3100A41B38 /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
+		51CBAB771546CC3100A41B38 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		51CBAB781546CC3100A41B38 /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		51CBAB7D1546CED400A41B38 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		51FAAF2A1546F7510063F42A /* bottom.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = bottom.applescript; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51411CBD153D7004000F03C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51CBAB7E1546CED400A41B38 /* Carbon.framework in Frameworks */,
+				51CBAB5B1546C42700A41B38 /* ShortcutRecorder.framework in Frameworks */,
+				51411CC5153D7004000F03C6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51411CB5153D7004000F03C6 = {
+			isa = PBXGroup;
+			children = (
+				51CBAB7D1546CED400A41B38 /* Carbon.framework */,
+				51411CCA153D7004000F03C6 /* Durden */,
+				51411CC3153D7004000F03C6 /* Frameworks */,
+				51411CC1153D7004000F03C6 /* Products */,
+				51CBAB4D1546C3EA00A41B38 /* ShortcutRecorder.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		51411CC1153D7004000F03C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51411CC0153D7004000F03C6 /* Durden.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51411CC3153D7004000F03C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51411CC4153D7004000F03C6 /* Cocoa.framework */,
+				51411CC6153D7004000F03C6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51411CC6153D7004000F03C6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51411CC7153D7004000F03C6 /* AppKit.framework */,
+				51411CC8153D7004000F03C6 /* CoreData.framework */,
+				51411CC9153D7004000F03C6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		51411CCA153D7004000F03C6 /* Durden */ = {
+			isa = PBXGroup;
+			children = (
+				51FAAF271546F6CA0063F42A /* scripts */,
+				51411CD6153D7004000F03C6 /* DurdenAppDelegate.h */,
+				51411CD7153D7004000F03C6 /* DurdenAppDelegate.m */,
+				51915D2E153EB80F00A0FB5F /* MainMenu.xib */,
+				51CBAB701546CC3100A41B38 /* HotKey */,
+				51411CCB153D7004000F03C6 /* Supporting Files */,
+			);
+			path = Durden;
+			sourceTree = "<group>";
+		};
+		51411CCB153D7004000F03C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5168E17F153D86EE00201003 /* 0.png */,
+				51411CCC153D7004000F03C6 /* Durden-Info.plist */,
+				51411CCD153D7004000F03C6 /* InfoPlist.strings */,
+				51411CD0153D7004000F03C6 /* main.m */,
+				51411CD2153D7004000F03C6 /* Durden-Prefix.pch */,
+				51411CD3153D7004000F03C6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51CBAB4E1546C3EA00A41B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51CBAB571546C3EA00A41B38 /* ShortcutRecorder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51CBAB701546CC3100A41B38 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				51CBAB711546CC3100A41B38 /* PTHotKey.h */,
+				51CBAB721546CC3100A41B38 /* PTHotKey.m */,
+				51CBAB771546CC3100A41B38 /* PTKeyCombo.h */,
+				51CBAB781546CC3100A41B38 /* PTKeyCombo.m */,
+				51CBAB731546CC3100A41B38 /* PTHotKeyCenter.h */,
+				51CBAB741546CC3100A41B38 /* PTHotKeyCenter.m */,
+				51CBAB751546CC3100A41B38 /* PTKeyCodeTranslator.h */,
+				51CBAB761546CC3100A41B38 /* PTKeyCodeTranslator.m */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		51FAAF271546F6CA0063F42A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5180E4811547588200883917 /* center.applescript */,
+				5180E4821547588200883917 /* fullscreen.applescript */,
+				5180E4791547510A00883917 /* bottomleft.applescript */,
+				5180E47A1547510A00883917 /* bottomright.applescript */,
+				5180E47B1547510A00883917 /* topleft.applescript */,
+				5180E47C1547510B00883917 /* topright.applescript */,
+				5180E47315474EE700883917 /* left.applescript */,
+				5180E47415474EE700883917 /* right.applescript */,
+				5180E47515474EE700883917 /* top.applescript */,
+				51FAAF2A1546F7510063F42A /* bottom.applescript */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51411CBF153D7004000F03C6 /* Durden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51411CDE153D7004000F03C6 /* Build configuration list for PBXNativeTarget "Durden" */;
+			buildPhases = (
+				51411CBC153D7004000F03C6 /* Sources */,
+				51411CBD153D7004000F03C6 /* Frameworks */,
+				51411CBE153D7004000F03C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Durden;
+			productName = Durden;
+			productReference = 51411CC0153D7004000F03C6 /* Durden.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51411CB7153D7004000F03C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Durden;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 51411CBA153D7004000F03C6 /* Build configuration list for PBXProject "Durden" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				el,
+				fr,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				pl,
+				"pt-BR",
+				ro,
+				sk,
+				sv,
+				th,
+				"zh-Hans",
+			);
+			mainGroup = 51411CB5153D7004000F03C6;
+			productRefGroup = 51411CC1153D7004000F03C6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 51CBAB4E1546C3EA00A41B38 /* Products */;
+					ProjectRef = 51CBAB4D1546C3EA00A41B38 /* ShortcutRecorder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				51411CBF153D7004000F03C6 /* Durden */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		51CBAB571546C3EA00A41B38 /* ShortcutRecorder.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShortcutRecorder.framework;
+			remoteRef = 51CBAB561546C3EA00A41B38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51411CBE153D7004000F03C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51411CCF153D7004000F03C6 /* InfoPlist.strings in Resources */,
+				51411CD5153D7004000F03C6 /* Credits.rtf in Resources */,
+				5168E180153D86EE00201003 /* 0.png in Resources */,
+				51915D2F153EB80F00A0FB5F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51411CBC153D7004000F03C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51411CD1153D7004000F03C6 /* main.m in Sources */,
+				51411CD8153D7004000F03C6 /* DurdenAppDelegate.m in Sources */,
+				51CBAB791546CC3100A41B38 /* PTHotKey.m in Sources */,
+				51CBAB7A1546CC3100A41B38 /* PTHotKeyCenter.m in Sources */,
+				51CBAB7B1546CC3100A41B38 /* PTKeyCodeTranslator.m in Sources */,
+				51CBAB7C1546CC3100A41B38 /* PTKeyCombo.m in Sources */,
+				51FAAF2B1546F7510063F42A /* bottom.applescript in Sources */,
+				5180E47615474EE700883917 /* left.applescript in Sources */,
+				5180E47715474EE700883917 /* right.applescript in Sources */,
+				5180E47815474EE700883917 /* top.applescript in Sources */,
+				5180E47D1547510B00883917 /* bottomleft.applescript in Sources */,
+				5180E47E1547510B00883917 /* bottomright.applescript in Sources */,
+				5180E47F1547510B00883917 /* topleft.applescript in Sources */,
+				5180E4801547510B00883917 /* topright.applescript in Sources */,
+				5180E4831547588200883917 /* center.applescript in Sources */,
+				5180E4841547588200883917 /* fullscreen.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51411CCD153D7004000F03C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51411CCE153D7004000F03C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		51411CD3153D7004000F03C6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51411CD4153D7004000F03C6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51411CDC153D7004000F03C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		51411CDD153D7004000F03C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		51411CDF153D7004000F03C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Durden/Durden-Prefix.pch";
+				INFOPLIST_FILE = "Durden/Durden-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		51411CE0153D7004000F03C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Durden/Durden-Prefix.pch";
+				INFOPLIST_FILE = "Durden/Durden-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51411CBA153D7004000F03C6 /* Build configuration list for PBXProject "Durden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51411CDC153D7004000F03C6 /* Debug */,
+				51411CDD153D7004000F03C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51411CDE153D7004000F03C6 /* Build configuration list for PBXNativeTarget "Durden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51411CDF153D7004000F03C6 /* Debug */,
+				51411CE0153D7004000F03C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51411CB7153D7004000F03C6 /* Project object */;
+}
