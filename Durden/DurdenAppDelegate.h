@@ -35,6 +35,17 @@
 @property (assign) IBOutlet SRRecorderControl *durdenSRCenterControl;
 @property (assign) IBOutlet SRRecorderControl *durdenSRFullscreenControl;
 
+@property (assign) IBOutlet NSMenuItem *durdenNSMIHalfLeft;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIHalfRight;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIHalfTop;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIHalfBottom;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIBottomLeft;
+@property (assign) IBOutlet NSMenuItem *durdenNSMITopLeft;
+@property (assign) IBOutlet NSMenuItem *durdenNSMITopRight;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIBottomRight;
+@property (assign) IBOutlet NSMenuItem *durdenNSMICenter;
+@property (assign) IBOutlet NSMenuItem *durdenNSMIFullscreen;
+
 @property (retain) NSStatusItem *durdenStatusItem;
 
 

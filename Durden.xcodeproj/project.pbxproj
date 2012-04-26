@@ -23,6 +23,7 @@
 		5180E4831547588200883917 /* center.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E4811547588200883917 /* center.applescript */; };
 		5180E4841547588200883917 /* fullscreen.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 5180E4821547588200883917 /* fullscreen.applescript */; };
 		51915D2F153EB80F00A0FB5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51915D2E153EB80F00A0FB5F /* MainMenu.xib */; };
+		51AC13E515497EE70061C9E7 /* DurdenWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AC13E415497EE70061C9E7 /* DurdenWindowController.m */; };
 		51CBAB5B1546C42700A41B38 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CBAB571546C3EA00A41B38 /* ShortcutRecorder.framework */; };
 		51CBAB791546CC3100A41B38 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB721546CC3100A41B38 /* PTHotKey.m */; };
 		51CBAB7A1546CC3100A41B38 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CBAB741546CC3100A41B38 /* PTHotKeyCenter.m */; };
@@ -66,6 +67,8 @@
 		5180E4811547588200883917 /* center.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = center.applescript; sourceTree = "<group>"; };
 		5180E4821547588200883917 /* fullscreen.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = fullscreen.applescript; sourceTree = "<group>"; };
 		51915D2E153EB80F00A0FB5F /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		51AC13E315497EE70061C9E7 /* DurdenWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DurdenWindowController.h; sourceTree = "<group>"; };
+		51AC13E415497EE70061C9E7 /* DurdenWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DurdenWindowController.m; sourceTree = "<group>"; };
 		51CBAB4D1546C3EA00A41B38 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ShortcutRecorder/ShortcutRecorder.xcodeproj; sourceTree = "<group>"; };
 		51CBAB711546CC3100A41B38 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
 		51CBAB721546CC3100A41B38 /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				51FAAF271546F6CA0063F42A /* scripts */,
 				51411CD6153D7004000F03C6 /* DurdenAppDelegate.h */,
 				51411CD7153D7004000F03C6 /* DurdenAppDelegate.m */,
+				51AC13E315497EE70061C9E7 /* DurdenWindowController.h */,
+				51AC13E415497EE70061C9E7 /* DurdenWindowController.m */,
 				51915D2E153EB80F00A0FB5F /* MainMenu.xib */,
 				51CBAB701546CC3100A41B38 /* HotKey */,
 				51411CCB153D7004000F03C6 /* Supporting Files */,
@@ -310,6 +315,7 @@
 				5180E4801547510B00883917 /* topright.applescript in Sources */,
 				5180E4831547588200883917 /* center.applescript in Sources */,
 				5180E4841547588200883917 /* fullscreen.applescript in Sources */,
+				51AC13E515497EE70061C9E7 /* DurdenWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

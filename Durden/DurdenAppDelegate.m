@@ -24,6 +24,16 @@
 @synthesize durdenSRCenterControl;
 @synthesize durdenSRFullscreenControl;
 
+@synthesize durdenNSMIHalfLeft;
+@synthesize durdenNSMIHalfRight;
+@synthesize durdenNSMIHalfTop;
+@synthesize durdenNSMIHalfBottom;
+@synthesize durdenNSMIBottomLeft;
+@synthesize durdenNSMITopLeft;
+@synthesize durdenNSMITopRight;
+@synthesize durdenNSMIBottomRight;
+@synthesize durdenNSMICenter;
+@synthesize durdenNSMIFullscreen;
 
     
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -97,11 +107,21 @@
 
 -(void)_defineGlobalHotKey:(PTHotKey*)hotKey
               forSRControl:(SRRecorderControl*)sr
+              withNSMI:(NSMenuItem*)nsmi
                 withAction:(SEL)action {
 	[sr setCanCaptureGlobalHotKeys:TRUE];
     
     [hotKey setTarget: self];
 	[hotKey setAction: action];
+    
+    if([sr keyComboString] != nil) {
+        KeyCombo kc = [sr keyCombo];
+        [nsmi setKeyEquivalent:[SRStringForKeyCode(kc.code) lowercaseString]];
+        [nsmi setKeyEquivalentModifierMask:kc.flags];
+    } else {
+        [nsmi setKeyEquivalent:@""];
+        [nsmi setKeyEquivalentModifierMask:0];
+    }
 	
 	[[PTHotKeyCenter sharedCenter] registerHotKey: hotKey];    
 }
@@ -117,9 +137,10 @@
 	globalHalfTop = [[PTHotKey alloc] initWithIdentifier:@"DurdenHalfTop"
                                                 keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRHalfTopControl keyCombo].code
                                                                                modifiers:[durdenSRHalfTopControl cocoaToCarbonFlags: [durdenSRHalfTopControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalHalfTop
                  forSRControl:durdenSRHalfTopControl
+                     withNSMI:durdenNSMIHalfTop
                    withAction:@selector(moveHalfTop:)];
 }
 
@@ -134,9 +155,10 @@
 	globalHalfBottom = [[PTHotKey alloc] initWithIdentifier:@"DurdenHalfBottom"
                                                 keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRHalfBottomControl keyCombo].code
                                                                                modifiers:[durdenSRHalfBottomControl cocoaToCarbonFlags: [durdenSRHalfBottomControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalHalfBottom
                  forSRControl:durdenSRHalfBottomControl
+                     withNSMI:durdenNSMIHalfBottom
                    withAction:@selector(moveHalfBottom:)];
 }
 
@@ -151,9 +173,10 @@
 	globalHalfLeft = [[PTHotKey alloc] initWithIdentifier:@"DurdenHalfLeft"
                                                    keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRHalfLeftControl keyCombo].code
                                                                                   modifiers:[durdenSRHalfLeftControl cocoaToCarbonFlags: [durdenSRHalfLeftControl keyCombo].flags]]];
-    
+  
 	[self _defineGlobalHotKey:globalHalfLeft
                  forSRControl:durdenSRHalfLeftControl
+                     withNSMI:durdenNSMIHalfLeft
                    withAction:@selector(moveHalfLeft:)];
 }
 
@@ -168,9 +191,10 @@
 	globalHalfRight = [[PTHotKey alloc] initWithIdentifier:@"DurdenHalfRight"
                                                  keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRHalfRightControl keyCombo].code
                                                                                 modifiers:[durdenSRHalfRightControl cocoaToCarbonFlags: [durdenSRHalfRightControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalHalfRight
                  forSRControl:durdenSRHalfRightControl
+                     withNSMI:durdenNSMIHalfRight
                    withAction:@selector(moveHalfRight:)];
 }
 
@@ -188,9 +212,10 @@
 	globalBottomLeft = [[PTHotKey alloc] initWithIdentifier:@"DurdenBottomLeft"
                                                 keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRBottomLeftControl keyCombo].code
                                                                                modifiers:[durdenSRBottomLeftControl cocoaToCarbonFlags: [durdenSRBottomLeftControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalBottomLeft
                  forSRControl:durdenSRBottomLeftControl
+                     withNSMI:durdenNSMIBottomLeft
                    withAction:@selector(moveBottomLeft:)];
 }
 
@@ -205,9 +230,10 @@
 	globalTopLeft = [[PTHotKey alloc] initWithIdentifier:@"DurdenTopLeft"
                                                    keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRTopLeftControl keyCombo].code
                                                                                   modifiers:[durdenSRTopLeftControl cocoaToCarbonFlags: [durdenSRTopLeftControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalTopLeft
                  forSRControl:durdenSRTopLeftControl
+                     withNSMI:durdenNSMITopLeft
                    withAction:@selector(moveTopLeft:)];
 }
 
@@ -222,9 +248,10 @@
 	globalTopRight = [[PTHotKey alloc] initWithIdentifier:@"DurdenTopRight"
                                                 keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRTopRightControl keyCombo].code
                                                                                modifiers:[durdenSRTopRightControl cocoaToCarbonFlags: [durdenSRTopRightControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalTopRight
                  forSRControl:durdenSRTopRightControl
+                     withNSMI:durdenNSMITopRight
                    withAction:@selector(moveTopRight:)];
 }
 
@@ -239,9 +266,10 @@
 	globalBottomRight = [[PTHotKey alloc] initWithIdentifier:@"DurdenBottomRight"
                                                  keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRBottomRightControl keyCombo].code
                                                                                 modifiers:[durdenSRBottomRightControl cocoaToCarbonFlags: [durdenSRBottomRightControl keyCombo].flags]]];
-    
+ 
 	[self _defineGlobalHotKey:globalBottomRight
                  forSRControl:durdenSRBottomRightControl
+                     withNSMI:durdenNSMIBottomRight
                    withAction:@selector(moveBottomRight:)];
 }
 
@@ -256,9 +284,10 @@
 	globalCenter = [[PTHotKey alloc] initWithIdentifier:@"DurdenCenter"
                                                     keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRCenterControl keyCombo].code
                                                                                    modifiers:[durdenSRCenterControl cocoaToCarbonFlags: [durdenSRCenterControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalCenter
                  forSRControl:durdenSRCenterControl
+                     withNSMI:durdenNSMICenter
                    withAction:@selector(centerWindow:)];
 }
 
@@ -273,9 +302,10 @@
 	globalFullscreen = [[PTHotKey alloc] initWithIdentifier:@"DurdenFullscreen"
                                                keyCombo:[PTKeyCombo keyComboWithKeyCode:[durdenSRFullscreenControl keyCombo].code
                                                                               modifiers:[durdenSRFullscreenControl cocoaToCarbonFlags: [durdenSRFullscreenControl keyCombo].flags]]];
-    
+
 	[self _defineGlobalHotKey:globalFullscreen
                  forSRControl:durdenSRFullscreenControl
+                     withNSMI:durdenNSMIFullscreen
                    withAction:@selector(fullscreenWindow:)];
 }
 
